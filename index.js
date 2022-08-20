@@ -15,6 +15,7 @@ function mondayWork(activity){
 }
 function wrapAdjective(flair="*"){
     return function(parameter="special"){
-        return flair==="*"?`You are *${parameter}*!`:`You are ||${parameter}||!`
+        // return flair==="*"?`You are *${parameter}*!`:`You are ||${parameter}||!`
+        return `You are ${flair}${parameter}${flair}!`
     }
 };
